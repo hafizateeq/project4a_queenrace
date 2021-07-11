@@ -92,6 +92,7 @@ img {
   background: #246e89 url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/641/bg_sky.jpg") repeat-x  100% 100% / auto 100%;
   top: 0;
   color: white;
+  text-align: center;
 }
 
 html, body {

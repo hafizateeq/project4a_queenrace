@@ -8,7 +8,6 @@ function App() {
     keyframes: [
       { transform: 'translateY(0)' },
       { transform: 'translateY(-100%)' }
-
     ],
     animationOptions: {
       easing: 'steps(7, end)',
@@ -88,6 +87,10 @@ function App() {
   }
 
   React.useEffect(() => {
+    const getforegroundanimation = foreground1Movement.getAnimation()
+    getforegroundanimation.currentTime = getforegroundanimation.effect.getTiming().duration / 2;
+    const getbackgroundanimation = background1Movement.getAnimation()
+    getbackgroundanimation.currentTime = getbackgroundanimation.effect.getTiming().duration / 2;
     setInterval(() => {
       // Playback rate of Queen 
       if (playbackRate_RQ > .4) {
