@@ -83,7 +83,7 @@ function App() {
   var goFaster = function () {
     /* But you can speed them up by giving the screen a click or a tap. */
     playbackRate_RQ *= 1.1;
-    redQueen_alice.getAnimation().playbackRate = playbackRate_BG;
+    redQueen_alice.getAnimation().playbackRate = playbackRate_RQ;
     adjustBackgroundPlayback();
   }
 
